@@ -1,0 +1,13 @@
+apiVersion: gateway.networking.k8s.io/v1beta1
+kind: ReferenceGrant
+metadata:
+  name: ref-grant-demoapp-gw
+  namespace: demoapp
+spec:
+  from:
+  - group: gateway.networking.k8s.io
+    kind: HTTPRoute
+    namespace: demoapp-gw
+  to:
+  - group: ""
+    kind: Service

@@ -27,3 +27,5 @@ resources:
 - productcatalogservice.yaml
 - recommendationservice.yaml
 - shippingservice.yaml
+- httproute.yaml
+- reference-grant.yaml
