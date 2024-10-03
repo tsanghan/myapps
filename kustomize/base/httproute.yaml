@@ -15,8 +15,7 @@ spec:
         type: PathPrefix
         value: /
     filters:
-    - type: HTTPRouteFilterType
-      responseHeaderModifier:
+    - type: ResponseHeaderModifier
         add:
         - name: "Strict-Transport-Security"
           value: "max-age=63072000; includeSubdomains; preload"
